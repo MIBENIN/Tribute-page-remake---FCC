@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
+.intro-text,figcaption{
+    font-family: 'Playfair Display', serif;
+}
+
+.container{
+    width:90%;
+    margin:0 auto;
+}
+.intro-text{
+    font-size: 3rem;
+    padding:1em 0 .4em;
+}
+.author-name{
+    background-color: lightgray;
+    padding:.1em;
+    margin:.5em 0 2em;
+}
+.profile-pic{
+    max-width: 100%;
+    filter:grayscale(100%);
+    margin-top: 1em;
+}
+
+figcaption{
+    background-color:#333333;
+    padding:.2em;
+    margin:1em 0;
+    color:white;
+    font-weight: 600;
+}
+
+.initial-para::first-letter{
+  padding: 0 .3rem;
+  font-size: 4rem;
+  float: left;
+  font-weight: 600;
+}
+
+.tribute-info p{
+    line-height: 1.5;
+    margin:.5em 0;
+    color:#343a40;
+    text-align: justify;
+}
+
+.tribute-link,.footer{
+    background-color: #333333;
+    color:white;
+}
+.tribute-link{
+    display: inline-block;
+    padding:.5em 2em;
+    border-radius: 1em;
+    margin:3em 0;
+    text-decoration: none;
+}
+
+.footer{
+    padding:1em 0;
+}
+
+@media screen and (min-width:768px){
+    .info{
+        column-count: 2;
+        column-gap: 1em;
+    }
+}
+@media screen and (min-width:900px){
+    .container{
+        width:80%;
+        max-width:1052px;
+    }
+    .intro-text{
+        font-size: 4rem;
+    }
+    .info{
+        column-count: 3;
+    }
+}
